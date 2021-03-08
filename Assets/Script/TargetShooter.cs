@@ -10,7 +10,7 @@ public class TargetShooter : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0))
         {
-            Ray ray=cam.ViewportPointToRay(new Vector3(0.5f, 0.5f));
+            Ray ray=cam.ViewportPointToRay(new Vector2(0.5f, 0.5f));
             if(Physics.Raycast(ray, out RaycastHit hit))
             {
                 TargetHealth target = hit.collider.gameObject.GetComponent<TargetHealth>();
