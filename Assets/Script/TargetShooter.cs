@@ -13,12 +13,19 @@ public class TargetShooter : MonoBehaviour
             Ray ray=cam.ViewportPointToRay(new Vector3(0.5f, 0.5f));
             if(Physics.Raycast(ray, out RaycastHit hit))
             {
-                TargetHealth target = hit.collider.gameObject.GetComponent<TargetHealth>();
-                if(target != null)
-                {   
-                    
-                    TargetHealth enemyHealthScript = hit.transform.GetComponent<TargetHealth>();
-                    enemyHealthScript.Damage(damageEnemy);
+                if (hit.transform.tag == "Enemy")
+                {
+                    TargetHealth target = hit.collider.gameObject.GetComponent<TargetHealth>();
+                    if(target != null)
+                    {   
+                        
+                        TargetHealth enemyHealthScript = hit.transform.GetComponent<TargetHealth>();
+                        enemyHealthScript.Damage(damageEnemy);
+                    }
+                }
+                else if (hit.transform.tag == "Exit")
+                {
+                    UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
         }
