@@ -310,10 +310,10 @@ GameObject:
   - component: {fileID: 7979673826604379700}
   - component: {fileID: 1265559075162901145}
   - component: {fileID: 584335269252528941}
-  - component: {fileID: 5322605225708959072}
   - component: {fileID: 5262361802737184307}
   - component: {fileID: 495796776758899827}
   - component: {fileID: 3962475456611892681}
+  - component: {fileID: 7904465269209289556}
   m_Layer: 0
   m_Name: MovementEnemy
   m_TagString: Enemy
@@ -398,22 +398,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5322605225708959072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5580686072831035811}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36728144d7d0c20459ee4d53c9933f29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 0
-  maxHealth: 100
-  healthBarUI: {fileID: 5580686072831035811}
-  slider: {fileID: 6263157713972329454}
 --- !u!114 &5262361802737184307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -457,6 +441,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdamage1: 20
+--- !u!114 &7904465269209289556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5580686072831035811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36728144d7d0c20459ee4d53c9933f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  maxHealth: 100
+  healthBarUI: {fileID: 5580686072831035811}
+  slider: {fileID: 6263157713972329454}
 --- !u!1 &7343639644859167726
 GameObject:
   m_ObjectHideFlags: 0

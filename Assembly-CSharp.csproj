@@ -36,6 +36,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\Control.cs" />
      <Compile Include="Assets\Script\CursorHide.cs" />
      <Compile Include="Assets\Script\EnemyStraightLineMovement.cs" />
      <Compile Include="Assets\Script\PlayerController.cs" />
@@ -44,7 +45,6 @@
      <Compile Include="Assets\Script\TargetHealth.cs" />
      <Compile Include="Assets\Script\TargetShooter.cs" />
      <Compile Include="Assets\Script\WaveSpawner.cs" />
-     <Compile Include="Assets\Script\targetbounds.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

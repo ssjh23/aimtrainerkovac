@@ -15,5 +15,10 @@ public class PlayerDmg : MonoBehaviour
             other.transform.GetComponent<PlayerHealth>().Damage(playerdamage1);
             Destroy(gameObject);
         }
+        else
+        {
+            Debug.Log("20 dmg");
+        }
+       
     }
 }
